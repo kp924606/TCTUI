@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Shapes;
 using TCTUI.TCTModel;
 using TCTUI.TCTEnum;
+using TCTUI.ValueConverter;
 
 namespace TCTUI.TCTButton
 {
@@ -89,17 +90,20 @@ namespace TCTUI.TCTButton
         {
             if (this.MajorColor == null)
             {
-                throw new InvalidOperationException("Please check TCTCycleButton must setttingsh MajorColor");
+                this.MajorColor = new SolidColorBrush(Colors.Yellow);
+                //throw new InvalidOperationException("Please check TCTCycleButton must setttingsh MajorColor");
             }
 
             if (this.MinorColor == null)
             {
-                throw new InvalidOperationException("Please check TCTCycleButton must setttingsh MinorColor");
+                this.MajorColor = new SolidColorBrush(Colors.White);
+                //throw new InvalidOperationException("Please check TCTCycleButton must setttingsh MinorColor");
             }
 
             if (this.CircleSize <= 0)
             {
-                throw new InvalidOperationException("Please check TCTCycleButton, must setttingsh CircleSize and Value > 0");
+                this.CircleSize = DefaultWidthHeight;
+                //throw new InvalidOperationException("Please check TCTCycleButton, must setttingsh CircleSize and Value > 0");
             }
 
             // 註冊樣式
@@ -173,8 +177,22 @@ namespace TCTUI.TCTButton
             contentPresenter.SetValue(FrameworkElement.HorizontalAlignmentProperty, HorizontalAlignment.Center);
             contentPresenter.SetValue(FrameworkElement.VerticalAlignmentProperty, VerticalAlignment.Center);
 
+            //123            
+            // 圖層（黑色透明 PNG）
+            var imageBorder = new FrameworkElementFactory(typeof(Border));
+            var imageBrush = new FrameworkElementFactory(typeof(Border));
+            imageBorder.SetBinding(Border.BackgroundProperty, new Binding(nameof(BackgroundImage))
+            {
+                RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+                Converter = new ImageSourceToBrushConverter()
+            });
+            //123456
+
             // 添加到 Grid
             grid.AppendChild(ellipse);
+            //圖片
+            grid.AppendChild(imageBorder);
+            //創建文字
             grid.AppendChild(contentPresenter);
 
             template.VisualTree = grid;

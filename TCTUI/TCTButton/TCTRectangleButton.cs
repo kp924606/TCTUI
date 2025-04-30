@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Shapes;
 using TCTUI.TCTModel;
 using TCTUI.TCTEnum;
+using TCTUI.ValueConverter;
 
 namespace TCTUI.TCTButton
 {
@@ -20,69 +21,6 @@ namespace TCTUI.TCTButton
     public class TCTRectangleButton : TCTBaseButton
     {
         #region Property
-
-        ///// <summary>
-        ///// 樣式
-        ///// </summary>
-        //public TCTControlStyleType StyleType
-        //{
-        //    get => (TCTControlStyleType)GetValue(TCTControlStyleTypeProperty);
-        //    set => SetValue(TCTControlStyleTypeProperty, value);
-        //}
-
-        ///// <summary>
-        ///// 樣式
-        ///// </summary>
-        //public static readonly DependencyProperty TCTControlStyleTypeProperty =
-        //   DependencyProperty.Register(
-        //       nameof(StyleType),
-        //       typeof(TCTControlStyleType),
-        //       typeof(TCTRectangleButton),
-        //       new FrameworkPropertyMetadata(TCTControlStyleType.Default, // 預設值
-        //           FrameworkPropertyMetadataOptions.AffectsRender)); // 當屬性變更時重新渲染
-
-        ///// <summary>
-        ///// 主要顏色
-        ///// </summary>
-        //public Brush MajorColor
-        //{
-        //    get => (Brush)GetValue(MajorColorProperty);
-        //    set => SetValue(MajorColorProperty, value);
-        //}
-
-        ///// <summary>
-        ///// 主要顏色
-        ///// </summary>
-        //public static readonly DependencyProperty MajorColorProperty =
-        //    DependencyProperty.Register(
-        //        nameof(MajorColor),  // 屬性名稱
-        //        typeof(Brush),       // 屬性類型
-        //        typeof(TCTRectangleButton), // 所屬類別
-        //        new FrameworkPropertyMetadata(new SolidColorBrush(Colors.Transparent), // 預設值
-        //            FrameworkPropertyMetadataOptions.AffectsRender)); // 當屬性變更時重新渲染
-
-        ///// <summary>
-        ///// 次要顏色
-        ///// </summary>
-        //public Brush MinorColor
-        //{
-        //    get => (Brush)GetValue(MinorColorProperty);
-        //    set => SetValue(MinorColorProperty, value);
-        //}
-
-        ///// <summary>
-        ///// 次要顏色
-        ///// </summary>
-        //public static readonly DependencyProperty MinorColorProperty =
-        //   DependencyProperty.Register(
-        //       nameof(MinorColor),  // 屬性名稱
-        //       typeof(Brush),       // 屬性類型
-        //       typeof(TCTRectangleButton), // 所屬類別
-        //       new FrameworkPropertyMetadata(new SolidColorBrush(Colors.Transparent), // 預設值
-        //           FrameworkPropertyMetadataOptions.AffectsRender)); // 當屬性變更時重新渲染
-
-
-
         /// <summary>
         /// 邊框粗細
         /// </summary>
@@ -95,8 +33,19 @@ namespace TCTUI.TCTButton
         {
             get
             {
-                double goldenSize = (Math.Min(this.Width, this.Height) / 1.618 / 100 * 5) + 1;
+                double width = double.IsNaN(this.Width) ? DefaultWidthHeight : this.Width;
+                double height = double.IsNaN(this.Height) ? DefaultWidthHeight : this.Height;
+                double goldenSize = (Math.Min(width, height) / 1.618 / 100 * 5) + 1;
                 return goldenSize;
+                //if (double.IsNaN(this.Width) || this.Width <= 0 || double.IsNaN(this.Height) || this.Height <= 0)
+                //{
+                //    return (DefaultWidthHeight / 1.618 / 100 * 5) + 1;
+                //}
+                //else
+                //{
+                //    double goldenSize = (Math.Min(this.Width, this.Height) / 1.618 / 100 * 5) + 1;
+                //    return goldenSize;
+                //}               
             }
         }
 
@@ -131,22 +80,26 @@ namespace TCTUI.TCTButton
         {
             if (this.MajorColor == null)
             {
-                throw new InvalidOperationException("Please check TCTRectangleButton must setttingsh MajorColor");
+                this.MajorColor = new SolidColorBrush(Colors.Yellow);
+                //throw new InvalidOperationException("Please check TCTRectangleButton must setttingsh MajorColor");
             }
 
             if (this.MinorColor == null)
             {
-                throw new InvalidOperationException("Please check TCTRectangleButton must setttingsh MinorColor");
+                this.MajorColor = new SolidColorBrush(Colors.White);
+                //throw new InvalidOperationException("Please check TCTRectangleButton must setttingsh MinorColor");
             }
 
             if (this.Width <= 0)
             {
-                throw new InvalidOperationException("Please check TCTRectangleButton, must setttingsh Width and Value > 0");
+                this.Width = DefaultWidthHeight;
+                //throw new InvalidOperationException("Please check TCTRectangleButton, must setttingsh Width and Value > 0");
             }
 
             if (this.Height <= 0)
             {
-                throw new InvalidOperationException("Please check TCTRectangleButton, must setttingsh Height and Value > 0");
+                this.Width = DefaultWidthHeight;
+                //throw new InvalidOperationException("Please check TCTRectangleButton, must setttingsh Height and Value > 0");
             }
 
             // 註冊樣式
@@ -223,9 +176,24 @@ namespace TCTUI.TCTButton
             contentPresenter.SetValue(FrameworkElement.HorizontalAlignmentProperty, HorizontalAlignment.Center);
             contentPresenter.SetValue(FrameworkElement.VerticalAlignmentProperty, VerticalAlignment.Center);
 
+            //123            
+            // 圖層（黑色透明 PNG）
+            var imageBorder = new FrameworkElementFactory(typeof(Border));
+            var imageBrush = new FrameworkElementFactory(typeof(Border));
+            imageBorder.SetBinding(Border.BackgroundProperty, new Binding(nameof(BackgroundImage))
+            {
+                RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+                Converter = new ImageSourceToBrushConverter()
+             });            
+            //123456
+
             // 添加到 Grid
             //grid.AppendChild(ellipse);
+            //邊框
             grid.AppendChild(border);
+            //圖片
+            grid.AppendChild(imageBorder);
+            //創建文字
             grid.AppendChild(contentPresenter);
 
             template.VisualTree = grid;

@@ -152,6 +152,11 @@
                     </WrapPanel>
                 </StackPanel>
 
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTRectangleButton x:Name="TCTRectangleButtonText17" Content="" MajorColor="Yellow" MinorColor ="Black" StyleType="ObviousDefaultEnlarge" Click="DoButtonYes" FontSize="12" Width="80" Height="80" BackgroundImage="image/Pull.png"></tctbutton:TCTRectangleButton>
+                    </WrapPanel>
+                </StackPanel>
 
                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
                     <WrapPanel>

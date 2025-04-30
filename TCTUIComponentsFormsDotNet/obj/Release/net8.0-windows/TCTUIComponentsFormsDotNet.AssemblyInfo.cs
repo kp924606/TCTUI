@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TCTUIComponentsFormsDotNet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70f5b3df09253c79ee6439544d25f48a840a6ebd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56a92f867f1b00cfdcbd3893229913e6f721dbb5")]
 [assembly: System.Reflection.AssemblyProductAttribute("TCTUIComponentsFormsDotNet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TCTUIComponentsFormsDotNet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

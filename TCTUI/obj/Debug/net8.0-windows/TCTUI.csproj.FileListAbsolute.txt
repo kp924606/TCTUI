@@ -21,3 +21,15 @@ D:\蔡承廷\Development\TCTUI\TCTUI\obj\Debug\net8.0-windows\refint\TCTUI.dll
 D:\蔡承廷\Development\TCTUI\TCTUI\obj\Debug\net8.0-windows\TCTUI.pdb
 D:\蔡承廷\Development\TCTUI\TCTUI\obj\Debug\net8.0-windows\ref\TCTUI.dll
 D:\蔡承廷\Development\TCTUI\TCTUI\obj\Debug\net8.0-windows\TCTUI.sourcelink.json
+D:\蔡承廷\Development\My\TCTUI\TCTUI\bin\Debug\net8.0-windows\TCTUI.deps.json
+D:\蔡承廷\Development\My\TCTUI\TCTUI\bin\Debug\net8.0-windows\TCTUI.dll
+D:\蔡承廷\Development\My\TCTUI\TCTUI\bin\Debug\net8.0-windows\TCTUI.pdb
+D:\蔡承廷\Development\My\TCTUI\TCTUI\obj\Debug\net8.0-windows\TCTUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\蔡承廷\Development\My\TCTUI\TCTUI\obj\Debug\net8.0-windows\TCTUI.AssemblyInfoInputs.cache
+D:\蔡承廷\Development\My\TCTUI\TCTUI\obj\Debug\net8.0-windows\TCTUI.AssemblyInfo.cs
+D:\蔡承廷\Development\My\TCTUI\TCTUI\obj\Debug\net8.0-windows\TCTUI.csproj.CoreCompileInputs.cache
+D:\蔡承廷\Development\My\TCTUI\TCTUI\obj\Debug\net8.0-windows\TCTUI.sourcelink.json
+D:\蔡承廷\Development\My\TCTUI\TCTUI\obj\Debug\net8.0-windows\TCTUI.dll
+D:\蔡承廷\Development\My\TCTUI\TCTUI\obj\Debug\net8.0-windows\refint\TCTUI.dll
+D:\蔡承廷\Development\My\TCTUI\TCTUI\obj\Debug\net8.0-windows\TCTUI.pdb
+D:\蔡承廷\Development\My\TCTUI\TCTUI\obj\Debug\net8.0-windows\ref\TCTUI.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\蔡承廷\\Development\\TCTUI\\TCTForm\\TCTForm.csproj": {}
+    "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTForm\\TCTForm.csproj": {}
   },
   "projects": {
-    "D:\\蔡承廷\\Development\\TCTUI\\TCTForm\\TCTForm.csproj": {
+    "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTForm\\TCTForm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\蔡承廷\\Development\\TCTUI\\TCTForm\\TCTForm.csproj",
+        "projectUniqueName": "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTForm\\TCTForm.csproj",
         "projectName": "TCTForm",
-        "projectPath": "D:\\蔡承廷\\Development\\TCTUI\\TCTForm\\TCTForm.csproj",
+        "projectPath": "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTForm\\TCTForm.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\蔡承廷\\Development\\TCTUI\\TCTForm\\obj\\",
+        "outputPath": "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTForm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\蔡承廷\\Development\\TCTUI\\TCTUIComponentsFormsDotNet\\TCTUIComponentsFormsDotNet.csproj": {
-                "projectPath": "D:\\蔡承廷\\Development\\TCTUI\\TCTUIComponentsFormsDotNet\\TCTUIComponentsFormsDotNet.csproj"
+              "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTUIComponentsFormsDotNet\\TCTUIComponentsFormsDotNet.csproj": {
+                "projectPath": "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTUIComponentsFormsDotNet\\TCTUIComponentsFormsDotNet.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "D:\\蔡承廷\\Development\\TCTUI\\TCTUIComponentsFormsDotNet\\TCTUIComponentsFormsDotNet.csproj": {
+    "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTUIComponentsFormsDotNet\\TCTUIComponentsFormsDotNet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\蔡承廷\\Development\\TCTUI\\TCTUIComponentsFormsDotNet\\TCTUIComponentsFormsDotNet.csproj",
+        "projectUniqueName": "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTUIComponentsFormsDotNet\\TCTUIComponentsFormsDotNet.csproj",
         "projectName": "TCTUIComponentsFormsDotNet",
-        "projectPath": "D:\\蔡承廷\\Development\\TCTUI\\TCTUIComponentsFormsDotNet\\TCTUIComponentsFormsDotNet.csproj",
+        "projectPath": "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTUIComponentsFormsDotNet\\TCTUIComponentsFormsDotNet.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\蔡承廷\\Development\\TCTUI\\TCTUIComponentsFormsDotNet\\obj\\",
+        "outputPath": "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTUIComponentsFormsDotNet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

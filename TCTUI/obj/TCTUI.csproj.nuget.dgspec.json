@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\蔡承廷\\Development\\TCTUI\\TCTUI\\TCTUI.csproj": {}
+    "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTUI\\TCTUI.csproj": {}
   },
   "projects": {
-    "D:\\蔡承廷\\Development\\TCTUI\\TCTUI\\TCTUI.csproj": {
+    "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTUI\\TCTUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\蔡承廷\\Development\\TCTUI\\TCTUI\\TCTUI.csproj",
+        "projectUniqueName": "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTUI\\TCTUI.csproj",
         "projectName": "TCTUI",
-        "projectPath": "D:\\蔡承廷\\Development\\TCTUI\\TCTUI\\TCTUI.csproj",
+        "projectPath": "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTUI\\TCTUI.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\蔡承廷\\Development\\TCTUI\\TCTUI\\obj\\",
+        "outputPath": "D:\\蔡承廷\\Development\\My\\TCTUI\\TCTUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

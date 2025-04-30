@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/pull.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/tct_icon-1.png")]
 
 

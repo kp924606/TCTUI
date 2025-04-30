@@ -9,10 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="image\Pull.png" />
     <None Remove="image\TCT_Icon-1.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="image\Pull.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="image\TCT_Icon-1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

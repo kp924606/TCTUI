@@ -16,6 +16,11 @@ namespace TCTUI.TCTModel
     /// </summary>
     public class TCTBaseButton : Button
     {
+        #region
+        public const double DefaultWidthHeight = 36;
+        #endregion
+
+
         #region Property
 
         /// <summary>
@@ -97,8 +102,20 @@ namespace TCTUI.TCTModel
                 typeof(ImageSource),                 // 屬性類型
                 typeof(TCTBaseButton),          // 所屬類別
                 new FrameworkPropertyMetadata(null,  // 預設值為 null
-                    FrameworkPropertyMetadataOptions.AffectsRender,
-                    OnBackgroundImageChanged)); // 屬性變更時觸發重繪
+                    FrameworkPropertyMetadataOptions.AffectsRender
+                    ));
+
+        ///// <summary>
+        ///// 背景圖片屬性
+        ///// </summary>
+        //public static readonly DependencyProperty BackgroundImageProperty =
+        //    DependencyProperty.Register(
+        //        nameof(BackgroundImage),             // 屬性名稱
+        //        typeof(ImageSource),                 // 屬性類型
+        //        typeof(TCTBaseButton),          // 所屬類別
+        //        new FrameworkPropertyMetadata(null,  // 預設值為 null
+        //            FrameworkPropertyMetadataOptions.AffectsRender,
+        //            OnBackgroundImageChanged)); // 屬性變更時觸發重繪
 
         /// <summary>
         /// 設置背景圖片
@@ -110,19 +127,19 @@ namespace TCTUI.TCTModel
             if (d is TCTBaseButton button && e.NewValue is ImageSource newImage)
             {
                 // 僅當使用者未設置 Background 時，才自動設為圖片背景
-                if (button.ReadLocalValue(BackgroundProperty) == DependencyProperty.UnsetValue)
-                {
-                    button.Background = new ImageBrush(newImage)
-                    {
-                        Stretch = Stretch.UniformToFill
-                    };
-                }
-
-                //// 套用背景圖片為 ImageBrush
-                //button.Background = new ImageBrush(newImage)
+                //if (button.ReadLocalValue(BackgroundProperty) == DependencyProperty.UnsetValue)
                 //{
-                //    Stretch = Stretch.UniformToFill
-                //};
+                //    button.Background = new ImageBrush(newImage)
+                //    {
+                //        Stretch = Stretch.UniformToFill
+                //    };
+                //}
+
+                // 套用背景圖片為 ImageBrush
+                button.Background = new ImageBrush(newImage)
+                {
+                    Stretch = Stretch.UniformToFill
+                };
             }
         }
 
