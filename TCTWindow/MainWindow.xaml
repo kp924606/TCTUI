@@ -1,0 +1,172 @@
+﻿<Window x:Class="TCTWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TCTWindow"        
+        xmlns:tctbutton="clr-namespace:TCTUI.TCTButton;assembly=TCTUI"
+        mc:Ignorable="d"
+        xmlns:tctcolor="clr-namespace:TCTUI.TCTColor;assembly=TCTUI"
+        Title="MainWindow" Height="600" Width="400" Background="Red"
+        WindowStartupLocation="CenterScreen"         
+        BorderBrush="#FFAA00"
+        BorderThickness="1"
+        >
+    <!--xmlns:cc="clr-namespace:CustomControls;assembly=TCTUI"-->
+    <Grid>
+            <!--<cc:CircularButton Content="Click Me"/>-->
+            <!--<cc:CircularButton x:Name="ButtonText" Content="123" MajorColor="Green" MinorColor ="White" StyleType="ObviousDefault" Click="DoButtonYes" CircleSize="120.0" FontSize="20"></cc:CircularButton>-->
+            <!--<tctbutton:TCTCycleButton x:Name="TCTCycleButtonText" Content="123" MajorColor="Green" MinorColor ="White" StyleType="ObviousDefault" Click="DoButtonYes" CircleSize="120.0" FontSize="20"></tctbutton:TCTCycleButton>-->
+
+        <!--<tctbutton:TCTCycleButton x:Name="TCTCycleButtonText" Content="123" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightBlue}" MinorColor ="White" StyleType="ObviousDefault" Click="DoButtonYes" CircleSize="120.0" FontSize="20"></tctbutton:TCTCycleButton>-->
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- 讓 TextBlock 自動適應內容 -->
+            <RowDefinition Height="*"/>
+            <!-- 剩餘空間給 ScrollViewer -->
+        </Grid.RowDefinitions>
+
+        <!-- 固定在最上方的 TextBlock -->
+        <TextBlock x:Name="TextBblockData" Grid.Row="0" Text="" FontSize="24" FontWeight="Bold" 
+               HorizontalAlignment="Stretch" VerticalAlignment="Center" 
+               Background="White" Padding="2" Margin="2,2,2,2"/>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTRectangleButton x:Name="TCTRectangleButtonText1" Content="1 Default" MajorColor="Blue" MinorColor ="White" StyleType="Default" Click="DoButtonYes" FontSize="20" Width="200" Height="100"></tctbutton:TCTRectangleButton>
+                    </WrapPanel>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTRectangleButton x:Name="TCTRectangleButtonText2" Content="2 DefaultObvious" MajorColor="Green" MinorColor ="White" StyleType="DefaultObvious" Click="DoButtonYes" FontSize="20" Width="200" Height="100"></tctbutton:TCTRectangleButton>
+                    </WrapPanel>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTRectangleButton x:Name="TCTRectangleButtonText3" Content="3 Obvious" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightBlue}" MinorColor ="White" StyleType="Obvious" Click="DoButtonYes" FontSize="20" Width="200" Height="100"></tctbutton:TCTRectangleButton>
+                    </WrapPanel>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTRectangleButton x:Name="TCTRectangleButtonText4" Content="4 ObviousDark" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightBlue}" MinorColor ="White" StyleType="ObviousDark" Click="DoButtonYes" FontSize="20" Width="200" Height="100"></tctbutton:TCTRectangleButton>
+                    </WrapPanel>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTRectangleButton x:Name="TCTRectangleButtonText5" Content="5 ObviousDefault" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightBlue}" MinorColor ="White" StyleType="ObviousDefault" Click="DoButtonYes" FontSize="20" Width="200" Height="100"></tctbutton:TCTRectangleButton>
+                    </WrapPanel>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTCycleButton x:Name="TCTCycleButtonText1" Content="6 Default" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightGreen}" MinorColor ="White" StyleType="Default" Click="DoButtonYes" CircleSize="120.0" FontSize="12"></tctbutton:TCTCycleButton>
+                    </WrapPanel>
+                </StackPanel>
+                
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTCycleButton x:Name="TCTCycleButtonText2" Content="7 DefaultObvious" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightGreen}" MinorColor ="White" StyleType="DefaultObvious" Click="DoButtonYes" CircleSize="120.0" FontSize="12"></tctbutton:TCTCycleButton>
+                    </WrapPanel>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTCycleButton x:Name="TCTCycleButtonText3" Content="8 DefaultObvious" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightGreen}" MinorColor ="White" StyleType="Obvious" Click="DoButtonYes" CircleSize="120.0" FontSize="12"></tctbutton:TCTCycleButton>
+                    </WrapPanel>
+                </StackPanel>
+                
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTCycleButton x:Name="TCTCycleButtonText4" Content="9 ObviousDark" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightGreen}" MinorColor ="White" StyleType="ObviousDark" Click="DoButtonYes" CircleSize="120.0" FontSize="12"></tctbutton:TCTCycleButton>
+                    </WrapPanel>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTCycleButton x:Name="TCTCycleButtonText5" Content="10 ObviousDefault" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightGreen}" MinorColor ="White" StyleType="ObviousDefault" Click="DoButtonYes" CircleSize="120.0" FontSize="12"></tctbutton:TCTCycleButton>
+                    </WrapPanel>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTCycleButton x:Name="TCTCycleButtonText6" Content="11 DefaultEnlarge" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightGreen}" MinorColor ="White" StyleType="DefaultEnlarge" Click="DoButtonYes" CircleSize="120.0" FontSize="12"></tctbutton:TCTCycleButton>
+                    </WrapPanel>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTCycleButton x:Name="TCTCycleButtonText7" Content="12 DefaultObviousEnlarge" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightGreen}" MinorColor ="White" StyleType="DefaultObviousEnlarge" Click="DoButtonYes" CircleSize="120.0" FontSize="12"></tctbutton:TCTCycleButton>
+                    </WrapPanel>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTCycleButton x:Name="TCTCycleButtonText8" Content="13 ObviousEnlarge" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightGreen}" MinorColor ="White" StyleType="ObviousEnlarge" Click="DoButtonYes" CircleSize="120.0" FontSize="12"></tctbutton:TCTCycleButton>
+                    </WrapPanel>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTCycleButton x:Name="TCTCycleButtonText9" Content="14 ObviousDarkEnlarge" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightGreen}" MinorColor ="White" StyleType="ObviousDarkEnlarge" Click="DoButtonYes" CircleSize="120.0" FontSize="12"></tctbutton:TCTCycleButton>
+                    </WrapPanel>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTCycleButton x:Name="TCTCycleButtonText10" Content="15 ObviousDefaultEnlarge" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightGreen}" MinorColor ="White" StyleType="ObviousDefaultEnlarge" Click="DoButtonYes" CircleSize="120.0" FontSize="12"></tctbutton:TCTCycleButton>
+                    </WrapPanel>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTRectangleButton x:Name="TCTRectangleButtonText11" Content="16 DefaultEnlarge" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LowRed}" MinorColor ="White" StyleType="DefaultEnlarge" Click="DoButtonYes" FontSize="12" Width="200" Height="100"></tctbutton:TCTRectangleButton>
+                    </WrapPanel>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTRectangleButton x:Name="TCTRectangleButtonText12" Content="17 DefaultObviousEnlarge" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.ShinyRed}" MinorColor ="White" StyleType="DefaultObviousEnlarge" Click="DoButtonYes" FontSize="12" Width="200" Height="100"></tctbutton:TCTRectangleButton>
+                    </WrapPanel>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTRectangleButton x:Name="TCTRectangleButtonText13" Content="18 ObviousEnlarge" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LowBlue}" MinorColor ="White" StyleType="ObviousEnlarge" Click="DoButtonYes" FontSize="12" Width="200" Height="100"></tctbutton:TCTRectangleButton>
+                    </WrapPanel>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTRectangleButton x:Name="TCTRectangleButtonText14" Content="19 ObviousDarkEnlarge" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.ShinyBlue}" MinorColor ="White" StyleType="ObviousDarkEnlarge" Click="DoButtonYes" FontSize="12" Width="200" Height="100"></tctbutton:TCTRectangleButton>
+                    </WrapPanel>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTRectangleButton x:Name="TCTRectangleButtonText15" Content="20 ObviousDefaultEnlarge" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightBlue}" MinorColor ="White" StyleType="ObviousDefaultEnlarge" Click="DoButtonYes" FontSize="12" Width="200" Height="100"></tctbutton:TCTRectangleButton>
+                    </WrapPanel>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        <tctbutton:TCTRectangleButton x:Name="TCTRectangleButtonText16" Content="" MajorColor="{x:Static tctcolor:TCTSolidColorBrush.LightBlue}" MinorColor ="White" StyleType="ObviousDefaultEnlarge" Click="DoButtonYes" FontSize="12" Width="80" Height="80" BackgroundImage="image/TCT_Icon-1.png"></tctbutton:TCTRectangleButton>
+                    </WrapPanel>
+                </StackPanel>
+
+
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10" Orientation="Vertical">
+                    <WrapPanel>
+                        
+                    </WrapPanel>
+                </StackPanel>
+
+
+            </StackPanel>
+        </ScrollViewer>        
+        
+        <!--<Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <UniformGrid x:Name="UniformGridButton" Rows="1" HorizontalAlignment="Center">
+            </UniformGrid>
+        </Grid>-->
+
+    </Grid>
+</Window>

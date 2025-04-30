@@ -1,0 +1,14 @@
+D:\蔡承廷\Development\TCTUI\TCTUIComponentsFormsDotNet\bin\Debug\net8.0-windows\TCTUIComponentsFormsDotNet.deps.json
+D:\蔡承廷\Development\TCTUI\TCTUIComponentsFormsDotNet\bin\Debug\net8.0-windows\TCTUIComponentsFormsDotNet.dll
+D:\蔡承廷\Development\TCTUI\TCTUIComponentsFormsDotNet\bin\Debug\net8.0-windows\TCTUIComponentsFormsDotNet.pdb
+D:\蔡承廷\Development\TCTUI\TCTUIComponentsFormsDotNet\obj\Debug\net8.0-windows\TCTUIComponentsFormsDotNet.UserControl1.resources
+D:\蔡承廷\Development\TCTUI\TCTUIComponentsFormsDotNet\obj\Debug\net8.0-windows\TCTUIComponentsFormsDotNet.csproj.GenerateResource.cache
+D:\蔡承廷\Development\TCTUI\TCTUIComponentsFormsDotNet\obj\Debug\net8.0-windows\TCTUIComponentsFormsDotNet.GeneratedMSBuildEditorConfig.editorconfig
+D:\蔡承廷\Development\TCTUI\TCTUIComponentsFormsDotNet\obj\Debug\net8.0-windows\TCTUIComponentsFormsDotNet.AssemblyInfoInputs.cache
+D:\蔡承廷\Development\TCTUI\TCTUIComponentsFormsDotNet\obj\Debug\net8.0-windows\TCTUIComponentsFormsDotNet.AssemblyInfo.cs
+D:\蔡承廷\Development\TCTUI\TCTUIComponentsFormsDotNet\obj\Debug\net8.0-windows\TCTUIComponentsFormsDotNet.csproj.CoreCompileInputs.cache
+D:\蔡承廷\Development\TCTUI\TCTUIComponentsFormsDotNet\obj\Debug\net8.0-windows\TCTUIComponentsFormsDotNet.sourcelink.json
+D:\蔡承廷\Development\TCTUI\TCTUIComponentsFormsDotNet\obj\Debug\net8.0-windows\TCTUIComponentsFormsDotNet.dll
+D:\蔡承廷\Development\TCTUI\TCTUIComponentsFormsDotNet\obj\Debug\net8.0-windows\refint\TCTUIComponentsFormsDotNet.dll
+D:\蔡承廷\Development\TCTUI\TCTUIComponentsFormsDotNet\obj\Debug\net8.0-windows\TCTUIComponentsFormsDotNet.pdb
+D:\蔡承廷\Development\TCTUI\TCTUIComponentsFormsDotNet\obj\Debug\net8.0-windows\ref\TCTUIComponentsFormsDotNet.dll

@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+	 <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="9.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TCTUIComponentsFormsDotNet\TCTUIComponentsFormsDotNet.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TCTUI">
+      <HintPath>..\TCTUI\bin\Release\net8.0-windows\TCTUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

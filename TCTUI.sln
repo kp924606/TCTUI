@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCTUI", "TCTUI\TCTUI.csproj", "{4882DC62-EC63-49F5-9E84-53BF086F03D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCTWindow", "TCTWindow\TCTWindow.csproj", "{F2CD4F0D-8E82-450F-9475-3895DECCD907}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCTForm", "TCTForm\TCTForm.csproj", "{6C230B92-413A-452C-A860-EA8DB94CFA55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCTUIComponentsFormsDotNet", "TCTUIComponentsFormsDotNet\TCTUIComponentsFormsDotNet.csproj", "{5C750DDD-C61B-4BDF-B760-261086091B1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4882DC62-EC63-49F5-9E84-53BF086F03D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4882DC62-EC63-49F5-9E84-53BF086F03D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4882DC62-EC63-49F5-9E84-53BF086F03D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4882DC62-EC63-49F5-9E84-53BF086F03D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2CD4F0D-8E82-450F-9475-3895DECCD907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2CD4F0D-8E82-450F-9475-3895DECCD907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2CD4F0D-8E82-450F-9475-3895DECCD907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2CD4F0D-8E82-450F-9475-3895DECCD907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C230B92-413A-452C-A860-EA8DB94CFA55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C230B92-413A-452C-A860-EA8DB94CFA55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C230B92-413A-452C-A860-EA8DB94CFA55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C230B92-413A-452C-A860-EA8DB94CFA55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C750DDD-C61B-4BDF-B760-261086091B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C750DDD-C61B-4BDF-B760-261086091B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C750DDD-C61B-4BDF-B760-261086091B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C750DDD-C61B-4BDF-B760-261086091B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
